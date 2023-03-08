@@ -1,0 +1,36 @@
+.box-colors{
+    display: flex;
+    flex-direction: row;
+}
+.box-style{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.span{
+    color: wheat;
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-1{
+    background-color: aqua;
+}
+.box-2{
+    background-color: aquamarine;
+}
+.box-3{
+    background-color: goldenrod;
+}
+.box-4{
+    background-color:rgb(82,255,144);
+}
+.box-5{
+    background-color:rgb(31,217,188);
+}
+.box-6{
+    background-color:rgb(54, 26, 177);
+}
