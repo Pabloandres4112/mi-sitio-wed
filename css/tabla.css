@@ -15,6 +15,24 @@ td,th{
 }
 .dc-color{
     background-color: aqua;
-    border-top-left-radius: 20px;
+    border-top-left-radius: px;
     color: white;
+}
+.estyl-box{
+    background-color: aqua; 
+}
+.esty-box{
+    background-color: gray;
+}
+.verde-box{
+background-color: rgb(26, 153, 26, 0.733);
+}
+.blu-box{
+background-color: blue ;
+}
+.naranja{
+background-color: orange;
+}
+.morado{
+background-color: purple;
 }
