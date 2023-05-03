@@ -2,11 +2,53 @@ body{
     background-image: url(https://i.pinimg.com/originals/ea/b4/9b/eab49b2c1eef23049189ee4c06582c52.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    border: 0;
-    width: 100%;
+    margin: auto;
+    border: auto;
+    width: 100px;
     height: 100%;
+    text-align: center;
+    
 }
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn{
+  position: relative;
+  display: block;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ffffff;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before{
+  background: #6232af;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.7s ease;
+}
+.btn1::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+  .btn1:hover::before{
+    height: 386%;
+    
+  }
+
 h2{
     color: white;
 }
