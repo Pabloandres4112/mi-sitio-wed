@@ -1,0 +1,49 @@
+body{
+    width: auto;
+    height: auto;
+}
+.head{
+    background-color: rgb(143, 143, 143);
+    
+    position: absolute;
+    width: 100%;
+    box-shadow: 8px 8px 9px rgb(136, 136, 136);
+}
+.menu1{
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid rgb(0, 0, 0);
+    padding: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.menu{
+    text-align: center;
+    width: 100%;
+}
+a{
+    text-decoration: none ;
+    color: rgb(0, 0, 0);
+}
+.menu1:hover{
+    font-size: 0.9em;
+}
+.logo{
+    float: left;
+}
+li{
+    float: right ;
+}
+@media only screen and (max-width:1000px){
+    .menu1{
+        display: none;
+    }
+    .menu-hamburgesa{
+        display: inline-block;
+        color: white;
+        font-size: 2.3em;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}

@@ -1,5 +1,5 @@
 body{
-    background: url(../img/andres.jpg); 
+    background: url(/img/andres.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -36,6 +36,7 @@ body{
   transform: translate(-50%,-50%);
   z-index: -1;
   transition: all 0.7s ease;
+  cursor: pointer;
 }
 .btn1::before{
     width: 100%;
