@@ -1,5 +1,5 @@
 body{
-    background: url(/img/andres.jpg); 
+    background: url(/img/paisaje.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10,6 +10,7 @@ body{
     height: 100%;
     text-align: center;
     display: flex;
+  
     
 }
 
