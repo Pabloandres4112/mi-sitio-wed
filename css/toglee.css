@@ -1,52 +1,55 @@
-*{
-    font-family:'Gill Sans', sans-serif;
+* {
+    font-family: 'Gill Sans', sans-serif;
 }
-.box-togell{
+.contenedor1-off {
     width: 250px;
     height: 120px;
-    background-color: rgb(52,92,52);
+    background: rgb(7, 214, 62);
     border-radius: 55px;
-    transition: background-color 400ms;
+    padding: 3px;
+    transition: all 1s;
 }
-.box-chek{
-    position: relative;
-    width: 110px;
-    height: 110px;
-    left: 5px;
-    top: -72px;
+.contenedor1-on {
+    width: 250px;
+    height: 120px;
     border-radius: 55px;
-    background-color: white;
-    transition: left;
-    transition: all 400ms;
-}
-.box-togell:hover{
+    padding: 3px;
+    transition: all 1s;
+    background-color: rgb(103, 104, 103);
     cursor: pointer;
-    background-color: rgb(103,104,103);
 }
-.box-togell:hover > .box-chek{
+.contenedor2-off {
     position: relative;
     width: 110px;
     height: 110px;
-    left: 130px;
-    top: -72px;
-    border-radius: 55px;
-    background-color: white;
+    background: white;
+    top: -32px;
+    left: 5px;
+    border-radius: 50%;
+    transition: all 1s;
 }
-.tex-on-of{
-    font-size: 2.1em;
+.contenedor2-on {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: white;
+    top: -32px;
+    left: 135px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.text-on-off {
+    font-size: 2em;
     font-weight: 700;
     color: white;
-
 }
-.tex-of{
+.text-on {
     position: relative;
     top: 39px;
-    left: 30px;
-
+    left: 20px;
 }
-.tex-on{
+.text-off {
     position: relative;
     top: 39px;
-    left: 170px;
+    left: 120px;
 }
-
