@@ -1,5 +1,5 @@
 body{
-   background-image: url(/mi-sitio-wed/img/paisaje.jpg);
+   background-image: url(../img/paisaje.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -7,11 +7,9 @@ body{
     margin: auto;
     border: auto;
     width: 100px;
-    height: 100%;
+    height: 100vh;
     text-align: center;
-    display: flex;
-  
-    
+    display: flex; 
 }
 
 .btn{
