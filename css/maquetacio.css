@@ -77,3 +77,9 @@ header{
     font-weight: 2em;
     text-align: justify;
 }
+
+@media(max-width:1152px){
+    .main-page{
+        grid-template:1fr;
+    }
+}
