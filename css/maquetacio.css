@@ -39,7 +39,8 @@ header{
     margin-top:15px ;
     gap: 40px 70px ;
     grid-template: "main-img  main-img  main-img" 600px
-                     "articulo-1   articulo-2    articulo-3 " 450px/
+                     "articulo-1   articulo-2    articulo-3 " 
+                     "articulo-4   articulo-5    articulo-6 "450px/
                       1fr            1fr             1fr;
 }
 .main-img{
@@ -55,7 +56,24 @@ header{
 .articulo-3{
     grid-area: articulo-3;
 }
+.articulo-4{
+    grid-area: articulo-4;
+}
+.articulo-5{
+    grid-area: articulo-5;
+}
+.articulo-6{
+    grid-area: articulo-6;
+}
 .img-articullo{
     height: 350px;
     background-color: rgb(64,64,64.8);
+}
+.style-tex-img{
+    text-align: center;
+    font-size: 1.2em;
+    color:  rgb(64,64,64.9);
+    font-family: verdana, sans-serif;
+    font-weight: 2em;
+    text-align: justify;
 }
