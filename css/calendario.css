@@ -9,7 +9,7 @@
     height: 100vh;
     display: grid;
     border:1px solid red;
-    align-content: center;
+    /* align-content: center; */
     justify-content: center;
     grid-template-columns: repeat(7,100px);
     grid-template-rows: repeat(7, 70px);
