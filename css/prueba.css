@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1152px) {
+    body {
+      grid-template:
+        "main-page"
+        auto
+        "main-page"
+        auto / 100%;
+    }
+
+    .main-page {
+      margin: 20px;
+    }
+
+    header {
+      grid-template: "logo" 80px / auto;
+      justify-content: center;
+    }
+
+    .main-content {
+      grid-template:
+        "main-img"
+        300px
+        "articulo-1"
+        auto
+        "articulo-2"
+        auto
+        "articulo-3"
+        auto
+        "articulo-4"
+        auto
+        "articulo-5"
+        auto
+        "articulo-6"
+        auto / 100%;
+    }
+
+    .img-articulo {
+      height: 200px;
+    }
+  }
+  @media only screen and (max-width: 1152px) {
+    body{
+        grid-template: 
+        "main-img"
+        auto
+        "ma";
+    }
+  }
