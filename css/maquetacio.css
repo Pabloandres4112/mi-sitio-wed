@@ -19,6 +19,7 @@ header{
                     150px       minmax(700px,100%);
 }
 .logo{
+    border-radius: 15px;
     grid-area: logo;
     background-color: goldenrod;
 }
@@ -46,6 +47,7 @@ header{
 .main-img{
     grid-area: main-img ;
     background-color: darkcyan;
+    border-radius: 15px;
 }
 .articulo-1{
     grid-area: articulo-1;
@@ -68,6 +70,7 @@ header{
 .img-articullo{
     height: 350px;
     background-color: rgb(64,64,64.8);
+    border-radius: 15px;
 }
 .style-tex-img{
     text-align: center;
