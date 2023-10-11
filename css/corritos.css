@@ -43,11 +43,11 @@
 }
 .box-img-producto , .imagen{
     grid-area: box-img-producto;
-    background-color: red;
+    /* background-color: red; */
 }
 .info-producto{
     grid-area: box-info-productos;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .box-butons-cantidad{
     font-size: 1.3em;
