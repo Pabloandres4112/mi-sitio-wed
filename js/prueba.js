@@ -1,36 +1,50 @@
-// JavaScript para el carrito de compras
-let cart = [];
-let total = 0;
+let boxMinus = document.getElementById("boxMinus"),
+    boxCant = document.getElementById("boxCant"),
+    boxPlus = document.getElementById("boxPlus"),
+    numeroProductos = document.getElementById("numeroPoductos"),
+    ValorProducto = 50000 ,
+    auxValorProducto = new Intl.NumberFormat("de-DE").format(ValorProducto);
+    document.getElementById("precioUnidad").innerHTML = auxValorProducto;
 
-function addToCart(productName, price) {
-    cart.push({ name: productName, price: price });
-    total += price;
 
-    updateCartDisplay();
-}
+    
+    boxPlus.addEventListener("click", function(){
+        let PlusCant = boxCantidad.innerHTML;
+        if(PlusCant < 10){
+            PlusCant++;
+            boxCantidad.innerText=PlusCant
+            determinarSingularPlural(PlusCant)
+            //calcular precio total
+    let SubTotal = ValorProducto*PlusCant,
+    auxSubtotal = new Intl.NumberFormat("de-DE").format(SubTotal);
+    document.getElementById("Subtotal").innerHTML = auxSubtotal;
 
-function updateCartDisplay() {
-    const cartList = document.getElementById("cart-list");
-    const cartTotal = document.getElementById("cart-total");
 
-    cartList.innerHTML = "";
-    cart.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-        cartList.appendChild(li);
-    });
+        }
+        
+    })
 
-    cartTotal.textContent = total.toFixed(2);
-}
 
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".add-to-cart");
+    boxMinus.addEventListener("click", function(){
+        let MinusCant = boxCantidad.innerHTML;
+        if(MinusCant > 0){
+            MinusCant--;
+            boxCantidad.innerText=MinusCant 
+            determinarSingularPlural(MinusCant)
+    
+            // calcular precio total
+            let SubTotal = ValorProducto*MinusCant ,
+            auxSubtotal = new Intl.NumberFormat("de-DE").format(SubTotal);
+            document.getElementById("Subtotal").innerHTML = auxSubtotal;
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            const productName = button.getAttribute("data-name");
-            const price = parseFloat(button.getAttribute("data-price"));
-            addToCart(productName, price);
-        });
-    });
-});
+
+        }
+    })
+    function determinarSingularPlural(PlusCant){
+        if (PlusCant == 1){
+            numeroProductos.innerHTML ="( " + PlusCant + " producto)"
+        }
+        else if ((PlusCant == 0 || PlusCant > 1)) {
+            numeroProductos.innerHTML = "( " + PlusCant + " productos)"
+        }
+    }

@@ -30,3 +30,4 @@ boxMinus.addEventListener("click",function(){
     let auxsubtotal = new  Intl.NumberFormat("de-DE").format(resta);
     subtotal.innerHTML = auxsubtotal;
 });
+
