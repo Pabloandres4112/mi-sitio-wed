@@ -1,24 +1,25 @@
-* {
-    margin: 0;
+*{
+    font-family: 'Inter', sans-serif;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
+
 header {
     background-color: rgb(35,47,62); 
     width: 100%;
     height: 60px;
     display: grid;
     grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
-                    150px       110px           1fr                 70px                160px               120px               140px;     
+                         150px        110px           1fr                    70px                160px               120px               140px;        
 }
 .header-logo {
     grid-area: header-logo;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 158px;
-    height: 72px;
+    width: 130px;
+    height: 70px;
 }
 .img-main-logo {
     width: 90%;
@@ -30,7 +31,7 @@ header {
     display: grid;
     grid-template: "box-icon-location box-texto-enviar-a" 
                    "box-icon-location box-texto-colombia" /
-                    20px          70px;  
+                       20px                  70px;  
 }
 .box-icon-location {
     height: 60px;
@@ -69,8 +70,8 @@ header {
     height: 40px;
     width: 100%;
     display: grid;
-    grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
-                    70px            1fr               50px;
+    grid-template: "box-filtro-todos  box-buscar-amazon  box-lupa" /
+                      70px                 1fr               50px;
 }
 .box-filtro-todos {
     grid-area: box-filtro-todos;
@@ -100,6 +101,8 @@ header {
     height: 40px;
     padding-left: 10px;
     font-size: 1.1em;
+    width: 100%;
+    outline: none;
 }
 .input-busqueda::placeholder {
     font-size: .8em;
@@ -123,12 +126,150 @@ header {
 .header-flag-country {
     grid-area: header-flag-country;
 }
+.box-flag{
+    padding: 20px 5px 0px; 
+}
+
+.txt-idioma{
+    position: absolute;
+    color: white;
+    padding-left: 40px ;
+    top: 22px;
+}
+.down-arrow{
+    position: absolute;
+    color: white;
+    padding-left: 42px ;
+    top: 37px;
+}
 .header-identificate {
     grid-area: header-identificate;
+    padding: 10px;
+    color: white;
+    
+}
+.text-signin{
+    font-weight: 900;
 }
 .header-devoluciones {
     grid-area: header-devoluciones;
+    padding: 10px;
+    color: white;
 }
 .header-carrito {
     grid-area: header-carrito;
+    padding: 10px;
+    color: white;
+    font-size: 2.5em;
+}
+.botones-inferiores{
+    background-color: rgb(49, 69, 95); 
+    height: 45px;
+    color: white;
+}
+
+.bx-menu{
+    font-size: 2.5em;
+    padding-top: 5px;
+}
+.btn-text{
+
+    padding: 8px 9px ;
+    font-size: 15px;
+}
+
+ .box-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+
+}
+.modal{
+    width: 95%;
+    height: 87%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    padding: 20px;
+    position: relative;
+    display: grid;
+    grid-template: "box-img-modal  info-modal"  /
+                        1fr          350px;
+    
+}
+.btn-close{
+    position: absolute;
+    top: 7px;
+    right: 11px;
+    font-size: 2em;
+    border: 1px solid rgb(24, 33, 151);
+    border-radius: 4px;
+    padding: 0 4px;
+    line-height: 1.1em;
+    box-shadow: 0 0 10px rgba(25, 11, 133, 0.5);
+} 
+.box-img-modal{
+    grid-area:  box-img-modal;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-modal{
+    grid-area: info-modal;
+    display: flex;
+    width: 90%;
+    height: 100%;  
+    flex-direction: column;
+    padding: 30px 0 0 10px;
+}
+.txt-caracteristicas-modal{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.txt-sub-description-modal{
+    padding-top: 10px;
+    color: gray;
+}
+.box-modal-img{
+    position: relative;
+    width: 97%;
+    height: 50%;
+    margin-top: 10px;
+    display: grid;
+   
+    grid-template:"box-img-1 box-img-2 box-img-3 box-img-4 "70px
+                  "box-img-5 box-img-6  box-img-7 box-img-8"70px/
+                         73px  73px  73px  73px;
+}
+.box-modal-img > .img {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px solid gray;
+}
+
+.box-img-1{grid-area: box-img-1;}
+.box-img-2{grid-area: box-img-2;}
+.box-img-3{grid-area: box-img-3;}
+.box-img-4{grid-area: box-img-4;}
+.box-img-5{grid-area: box-img-5;}
+.box-img-6{grid-area: box-img-6;}
+.box-img-7{grid-area: box-img-7;}
+.box-img-8{grid-area: box-img-8;} 
+
+.img{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
 }
