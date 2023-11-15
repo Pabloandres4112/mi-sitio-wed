@@ -225,6 +225,10 @@ header {
     align-items: center;
 
 }
+.main-img-modal{
+    width: 580px;
+    height: 750px;
+}
 
 .info-modal{
     grid-area: info-modal;
