@@ -1,202 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins;
-}
-header {
-    background-color: rgb(35,47,62); 
-    width: 100%;
-    height: 60px;
-    display: grid;
-    grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
-                    150px       110px           1fr                 70px                160px               120px               140px;     
-}
-.header-logo {
-    grid-area: header-logo;
+#half-stars-example {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-    height: 70px;
-}
-.img-main-logo {
-    width: 90%;
-    color: white;
-    padding-left: 15px;
-}
-.header-enviar-a {
-    grid-area: header-enviar-a;
-    display: grid;
-    grid-template: "box-icon-location box-texto-enviar-a" 
-                   "box-icon-location box-texto-colombia" /
-                    20px          70px;  
-}
-.box-icon-location {
-    height: 60px;
-    grid-area: box-icon-location;
-    color: white;
-    font-size: 1.3em;
-    display: flex;
-    align-items: center;
-}
-.icon-location {
-    font-size: .9em;
-}
-.box-texto-enviar-a {
-    grid-area: box-texto-enviar-a;
-    color: white;
-    position: relative;
-    top: 10px;
-    font-size: .7em;
-    font-weight: 300;
-}
-.box-texto-colombia {
-    grid-area: box-texto-colombia;
-    font-size: .9em;
-    font-weight: 500;
-    color: white;
-    position: relative;
-    bottom: 4px;
-}
-.box-header-search-input {
-    grid-area: box-header-search-input;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
-.header-search-input {
-    height: 40px;
-    width: 100%;
-    display: grid;
-    grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
-                    70px            1fr               50px;
-}
-.box-filtro-todos {
-    grid-area: box-filtro-todos;
-    background-color: rgb(230,230,230);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-.filtro-todos {
-    display: flex;
-    align-items: center;
-    height: 40px;
-}
-.header-todos {
-    padding: 0 4px 0 15px;
-    font-size: .7em;
-}
-.icon-chevron {
-    font-size:.7em;
-}
-.box-buscar-amazon {
-    grid-area: box-buscar-amazon;
-    background-color: white;
-    width: 100%;
-}
-.input-busqueda {
-    border:none;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 1.1em;
-}
-.input-busqueda::placeholder {
-    font-size: .8em;
-    font-weight: 500;
-}
-.box-lupa {
-    height: 40px;
-    background-color: rgb(254,189,105);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.lupa {
-    grid-area: lupa;
-}
-.icon-lupa {
-    font-size: 1.1em;
-}
-.header-flag-country {
-    grid-area: header-flag-country;
-}
-.header-identificate {
-    grid-area: header-identificate;
-}
-.header-devoluciones {
-    grid-area: header-devoluciones;
-}
-.header-carrito {
-    grid-area: header-carrito;
+    flex-direction: row;
+    gap: 3px;
 }
 
-/* Fonts */
-/* poppins-200 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    src: url('../fonts/poppins-v20-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-300 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-/* poppins-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+.rating-group {
+    display: inline-flex;
+}
 
+.rating__icon {
+    pointer-events: none;
+}
 
+.rating__input {
+    position: absolute !important;
+    left: -9999px !important;
+}
 
+.rating__label {
+    cursor: pointer;
+    padding: 0 0.2em;
+    font-size: 1rem;
+}
 
+.rating__label--half {
+    padding-right: 0;
+    margin-right: -1.3em;
+    z-index: 2;
+}
 
+.rating__icon--star {
+    color: orange;
+}
 
+.rating__icon--none {
+    color: #eee;
+}
 
+.rating__input--none:checked+.rating__label .rating__icon--none {
+    color: red;
+}
 
+.rating__input:checked~.rating__label .rating__icon--star {
+    color: #ddd;
+}
 
+.rating-group:hover .rating__label .rating__icon--star,
+.rating-group:hover .rating__label--half .rating__icon--star {
+    color: orange;
+}
 
+.rating__input:hover~.rating__label .rating__icon--star,
+.rating__input:hover~.rating__label--half .rating__icon--star {
+    color: #ddd;
+}
+
+.rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+    color: #eee;
+}
+
+.rating__input--none:hover+.rating__label .rating__icon--none {
+    color: red;
+}

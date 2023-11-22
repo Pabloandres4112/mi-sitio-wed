@@ -1,55 +1,103 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
-    <link rel="stylesheet" href="css/amaazon.css">
-    <link rel="stylesheet" href="ico/all.css">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .left, .right {
+            flex: 1;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .right {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img-container {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <img class="img-main-logo" src="img/amazon-1343x418.webp" alt="">
-        </div>
-        <div class="header-enviar-a">
-            <div class="box-icon-location">
-                <i class="icon-location fa-solid fa-location-dot"></i>
-            </div>
-            <div class="box-texto-enviar-a">
-                <span class="texto-enviar-a">Enviar a</span>
-            </div>
-            <div class="box-texto-colombia">
-                <span class="texto-colombia">Japón</span>
-            </div>
-        </div>
-        <div class="box-header-search-input">
-            <div class="header-search-input">
-                <div class="box-filtro-todos">
-                    <div class="filtro-todos">
-                        <span class="header-todos">Todos</span>
-                        <i class="icon-chevron fa-solid fa-chevron-down"></i>
-                    </div>
+    <div class="container">
+        <div class="left">
+            <div class="title">PC de escritorio + monitor</div>
+            <div class="details">
+                <div class="detail">
+                    <div class="label">Marca:</div>
+                    <div>Skytech Gaming</div>
                 </div>
-                <div class="box-buscar-amazon">
-                    <div class="buscar-amazon">
-                        <input class="input-busqueda" type="text" name="" id="" placeholder="Buscar Amazon">
-                    </div>
+                <div class="detail">
+                    <div class="label">Tipo de diseño:</div>
+                    <div>Mini PC</div>
                 </div>
-                <div class="box-lupa">
-                    <div class="lupa">
-                        <i class="icon-lupa fa-solid fa-magnifying-glass"></i>
-                    </div>
+                <div class="detail">
+                    <div class="label">Sistema operativo:</div>
+                    <div>Windows 11 Home</div>
+                </div>
+                <div class="detail">
+                    <div class="label">Capacidad de almacenamiento:</div>
+                    <div>500 GB</div>
                 </div>
             </div>
         </div>
-        <div class="header-country-flag">
-
+        <div class="right">
+            <div class="img-container">
+                <img class="img" src="https://via.placeholder.com/200" alt="">
+            </div>
+            <div class="title">Monitor</div>
+            <div class="details">
+                <div class="detail">
+                    <div class="label">Modelo:</div>
+                    <div>Skytech Blaze 3</div>
+                </div>
+                <div class="detail">
+                    <div class="label">Color:</div>
+                    <div>Negro</div>
+                </div>
+            </div>
         </div>
-        <div class="header-identificate"></div>
-        <div class="header-devoluciones"></div>
-        <div class="header-carrito"></div>
-    </header>
+    </div>
 </body>
 </html>
