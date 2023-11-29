@@ -535,6 +535,14 @@ ul{
 }
 
 /* contenido acomdor */
+.contenedorP {
+    position: fixed;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+
 .linea{
     border: 1px solid  #0F1111;;
 }
