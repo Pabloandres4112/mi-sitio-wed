@@ -1,24 +1,21 @@
-let btnClose = document.getElementById("btnClose"),
-mainContent = document.getElementById("mainContent"),
+document.addEventListener('DOMContentLoaded', function () {
+    let btnClose = document.getElementById("btnClose");
+    let mainContent = document.getElementById("mainContent");
+    let imagenes = document.querySelectorAll('.box-modal-img img');
+    let imgModal = document.getElementById('imgModal');
 
-// Obtén todas las imágenes dentro del contenedor box-modal-img
-imagenes = document.querySelectorAll('.box-modal-img img'),
+    imagenes.forEach((imagen) => {
+        imagen.addEventListener('click', () => {
+            imgModal.querySelector('.main-img-modal').src = imagen.src;
+        });
+    });
 
-// Obtén el contenedor imgModal
-imgModal = document.getElementById('imgModal');
-
-// Agrega un evento de clic a cada imagen
-imagenes.forEach((imagen) => {
-  imagen.addEventListener('click', () => {
-    // Cambia la imagen principal en el contenedor imgModal
-    imgModal.querySelector('.main-img-modal').src = imagen.src;
-  });
+    btnClose.addEventListener('click', function () {
+        mainContent.style.display = "none";
+    });
 });
 
-// Event Listener for the close button
-btnClose.addEventListener('click', function(){
-    mainContent.style.display = "none";
-    });
+
 
 //////////////////////////////////////////////////////////////////////
 
